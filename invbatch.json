@@ -1,0 +1,7 @@
+{
+  "Paths": {
+    "Quantity": 2,
+    "Items": ["/index.html", "/static/*"]
+  },
+  "CallerReference": "circleci-invalidation-reference"
+}

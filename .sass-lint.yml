@@ -1,0 +1,221 @@
+files:
+  include: src/**/*.s+(a|c)ss
+  ignore:
+    - node_modules
+options:
+  formatter: stylish
+  merge-default-rules: false
+# https://github.com/sasstools/sass-lint/tree/master/docs/rules
+rules:
+  attribute-quotes:
+    - 2
+    - include: true
+  bem-depth:
+    - 0
+    - max-depth: 1
+  border-zero:
+    - 1
+    - convention: 0
+  brace-style:
+    - 2
+    - style: 1tbs
+      allow-single-line: false
+  class-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: ^[a-z][a-z0-9]*([A-Z0-9][a-z0-9]*)*((\.is-|-+)[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*)*$
+      convention-explanation: https://regexr.com/39qql
+  clean-import-paths:
+    - 1
+    - filename-extension: false
+      leading-underscore: false
+  declarations-before-nesting: 2
+  empty-args:
+    - 1
+    - include: true
+  empty-line-between-blocks:
+    - 1
+    - include: true
+      allow-single-line-rulesets: false
+  extends-before-declarations: 1
+  extends-before-mixins: 1
+  final-newline:
+    - 1
+    - include: true
+  force-attribute-nesting: 1
+  force-element-nesting: 1
+  force-pseudo-nesting: 1
+  function-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: camelcase
+  hex-length:
+    - 2
+    - style: long
+  hex-notation:
+    - 2
+    - style: lowercase
+  id-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: pascalcase
+  indentation:
+    - 2
+    - size: 4
+  leading-zero:
+    - 1
+    - include: false
+  max-file-line-count: 0
+  max-line-length:
+    - 1
+    - length: 120
+  mixin-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: camelcase
+  mixins-before-declarations:
+    - 1
+    - exclude:
+      - breakpoint
+      - mq
+  nesting-depth:
+    - 1
+    - max-depth: 4
+  no-attribute-selectors: 0
+  no-color-hex: 0
+  no-color-keywords: 1
+  no-color-literals:
+    - 2
+    - allow-map-identifiers: true
+      allow-rgba: true
+      allow-variable-identifiers: true
+  no-combinators: 0
+  no-css-comments: 1
+  no-debug: 0
+  no-disallowed-properties:
+    - 0
+    - properties: []
+  no-duplicate-properties:
+    - 1
+    - exclude:
+      - cursor
+  no-empty-rulesets: 1
+  no-extends: 0
+  no-ids: 2
+  no-important: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors:
+    - 2
+    - whitelist: []
+  no-misspelled-properties:
+    - 2
+    - extra-properties: []
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: false
+      allow-element-with-class: false
+      allow-element-with-id: false
+  no-trailing-whitespace: 1
+  no-trailing-zero: 0
+  no-transition-all: 2
+  no-universal-selectors: 0
+  no-url-domains: 0
+  no-url-protocols:
+    - 0
+    - allow-protocol-relative-urls: false
+  no-vendor-prefixes:
+    - 1
+    - additional-identifiers: []
+      excluded-identifiers:
+        - webkit
+        - moz
+      ignore-non-standard: true
+  no-warn: 0
+  one-declaration-per-line: 2
+  placeholder-in-extend: 1
+  placeholder-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: camelcase
+  property-sort-order:
+    - 1
+    - order: alphabetical
+      ignore-custom-properties: false
+  property-units:
+    - 1
+    - global:
+        - ch
+        - em
+        - ex
+        - rem
+        - cm
+        - in
+        - mm
+        - pc
+        - pt
+        - px
+        - q
+        - vh
+        - vw
+        - vmin
+        - vmax
+        - deg
+        - grad
+        - rad
+        - turn
+        - ms
+        - s
+        - Hz
+        - kHz
+        - dpi
+        - dpcm
+        - dppx
+        - '%'
+      per-property: {}
+  pseudo-element: 2
+  quotes:
+    - 1
+    - style: single
+  shorthand-values: 0
+  single-line-per-selector: 2
+  space-after-bang:
+    - 1
+    - include: false
+  space-after-colon:
+    - 1
+    - include: true
+  space-after-comma:
+    - 1
+    - include: true
+  space-around-operator:
+    - 1
+    - include: true
+  space-before-bang:
+    - 1
+    - include: true
+  space-before-brace:
+    - 1
+    - include: true
+  space-before-colon:
+    - 1
+    - include: false
+  space-between-parens:
+    - 1
+    - include: false
+  trailing-semicolon:
+    - 2
+    - include: true
+  url-quotes: 2
+  variable-for-property:
+    - 2
+    - properties: []
+      allow-map-get: true
+      allowed-functions: []
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: ^[a-z][a-z0-9]*([A-Z0-9][a-z0-9]*)*((\.is-|-+)[a-z0-9][a-z0-9]*([A-Z0-9][a-z0-9]*)*)*$
+      convention-explanation: https://regexr.com/39qql
+  zero-unit:
+    - 2
+    - include: false

@@ -1,0 +1,6 @@
+{
+  "singlekey": "Single Key Example",
+  "nested": {
+    "key": "Nested Key Example"
+  }
+}
