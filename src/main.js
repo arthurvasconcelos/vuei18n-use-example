@@ -48,7 +48,6 @@ import router from './router';
     mixins: [
         require('./main.vue').default
     ],
-    i18n,
     router,
     components: {
         // Main components
@@ -66,4 +65,4 @@ window.onerror = function (errorMsg, url, lineNo, colNo, error) {
 };
 
 /** App Instance */
-export const app = new App().$mount('#app');
+export const app = new App({ i18n }).$mount('#app');
