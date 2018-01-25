@@ -1,0 +1,6 @@
+{
+  "singlekey": "Exemplo de chave simples",
+  "nested": {
+    "key": "Exempli de chave aninhada"
+  }
+}

@@ -28,7 +28,8 @@ const i18n = new VueI18n({
     locale: 'en',
     fallbackLocale: 'en',
     messages: {
-        en: require('./locales/messages/en.json')
+        en: require('./locales/messages/en.json'),
+        pt: require('./locales/messages/pt.json')
     },
     dateTimeFormats: {},
     numberFormats: {}
