@@ -54,6 +54,7 @@ module.exports = {
             {
                 test: /\.(json)(\?.*)?$/,
                 loader: 'file-loader',
+                include: [resolve('src/assets')],
                 query: {
                     limit: 9999,
                     name: utils.assetsPath('data/[name].[hash:7].[ext]')

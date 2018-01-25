@@ -34,6 +34,8 @@ const i18n = new VueI18n({
     numberFormats: {}
 });
 
+console.log('vue-i18n instance before applied: ', i18n);
+
 import router from './router';
 
 /**
@@ -54,7 +56,8 @@ import router from './router';
 })
 class App extends Vue {
     mounted () {
-        console.log('vue-i18n config: ', this._i18n);
+        console.log('vue: ', this);
+        console.log('vue-i18n instance after applied: ', this._i18n);
     }
 }
 
